@@ -7,12 +7,12 @@ body {
 
 h1 {
   font-family: "Permanent Marker", cursive;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 500;
   padding-top: 4rem;
   -webkit-text-stroke-width: 2px;
   -webkit-text-fill-color: #fff;
-  text-shadow: 0 0 2px #000;
+  text-shadow: 5px 5px 2px #000;
   /*text-align: center;*/
 }
 
@@ -37,15 +37,18 @@ main {
 }
 
 #landing {
-  background: #fff;
+  background: url(/images/IMG_2282.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #landing-text {
   display: flex;
   flex: 0 1 40vw;
-  height: 40vh;
+  height: 30vh;
   justify-content: center;
-  align-items: top;
+  align-items: center;
   text-align: center;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -56,20 +59,18 @@ main {
 }
 
 #landing-image {
-  background: url(/images/IMG_2282.JPG);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
+  height: 70vh;
   flex: 0 1 60vw;
   margin: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #spotify {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  padding-top: 18%;
 }
 
 .follow {
@@ -127,8 +128,6 @@ main {
   padding: 0.8rem;
   text-align: center;
   background-color: #f3f3f3;
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .iframe-container {
@@ -171,6 +170,26 @@ footer h3 {
 
   #landing-image {
     height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #spotify {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 50%;
+  }
+
+  .caption {
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 
