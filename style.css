@@ -42,7 +42,7 @@ main {
 }
 
 #landing {
-  background: url(/images/IMG_2282.JPG);
+  background-image: url(/images/IMG_2282.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
