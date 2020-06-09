@@ -5,6 +5,11 @@ body {
   background-color: rgb(14, 14, 14);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 h1 {
   font-family: "Permanent Marker", cursive;
   font-size: 3.5rem;
@@ -45,10 +50,10 @@ main {
 
 #landing-text {
   display: flex;
-  flex: 0 1 40vw;
-  height: 30vh;
+  flex: 0 1 50vw;
+  height: 0 1 50vh;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   text-align: center;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -59,12 +64,14 @@ main {
 }
 
 #landing-image {
-  height: 70vh;
-  flex: 0 1 60vw;
+  display: flex;
+  height: 0 1 50vh;
+  flex: 0 1 50vw;
   margin: 0;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 #spotify {
@@ -110,15 +117,19 @@ main {
 }
 
 #base {
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
   background: #333;
   color: #fff;
+  font-family: "Permanent Marker", cursive;
+  position: sticky;
+  bottom: 0px;
 }
 
 #base h2 {
   border-left: dotted 1px #fff;
   border-right: dotted 1px #fff;
+  text-align: left;
   display: inline-block;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -159,22 +170,22 @@ footer h3 {
 /*screen sizes >= 500px */
 
 @media (min-width: 500px) {
-  #landing {
+  #landings {
     display: flex;
     height: 100%;
   }
 
   #landing-text {
-    height: 100vh;
+    height: 30vh;
   }
 
   #landing-image {
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
     position: relative;
   }
 
-  #spotify {
+  #spotifyy {
     border: 0;
     height: 100%;
     left: 0;
