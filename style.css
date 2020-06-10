@@ -80,10 +80,45 @@ main {
   overflow: hidden;
 }
 
+#coverart {
+  width: 380px;
+  height: 380px;
+  border: 2px;
+  border-style: solid;
+}
+
 .follow {
   position: relative;
   padding-left: 27.5%;
   padding-bottom: 1rem;
+}
+
+#music {
+  background-image: url(images/img_4005.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+
+#music-area {
+  display: flex;
+  flex: 0 1 50vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#music-right {
+  display: flex;
+  flex: 0 1 50vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
 }
 
 .btn {
@@ -195,6 +230,19 @@ footer h3 {
     padding-top: 50%;
   }
 
+  #music {
+    display: flex;
+    height: 100%;
+  }
+
+  #music-area {
+    height: 60vh;
+  }
+
+  #music-right {
+    height: 60vh;
+  }
+
   .caption {
     padding: 0.8rem;
     text-align: center;
@@ -203,7 +251,6 @@ footer h3 {
     padding-right: 5rem;
   }
 }
-
 /*screen sizes >= 700px */
 
 /*@media (min-width: 700px) {
