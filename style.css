@@ -78,6 +78,8 @@ main {
   display: inline-block;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  width: 100;
 }
 
 #coverart {
