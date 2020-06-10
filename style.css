@@ -86,6 +86,7 @@ main {
   width: 330px;
   border: 2px;
   border-style: solid;
+  overflow: none;
 }
 
 #coverart img {
