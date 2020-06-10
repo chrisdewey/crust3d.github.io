@@ -88,6 +88,9 @@ main {
   border-style: solid;
 }
 
+#coverart img {
+}
+
 .follow {
   position: relative;
   padding-left: 27.5%;
