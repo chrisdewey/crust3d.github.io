@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Permanent + Marker&family=Roboto&display=swap);
 
 body {
   font-family: "Roboto", sans-serif;
@@ -81,8 +81,9 @@ main {
 }
 
 #coverart {
-  width: 380px;
-  height: 380px;
+  display: flex;
+  height: 330px;
+  width: 330px;
   border: 2px;
   border-style: solid;
 }
@@ -225,15 +226,20 @@ footer h3 {
   }
 
   #landing-text {
-    height: 25vh;
+    height: 30vh;
     /*change to 30vh after song is live, and countdown timer is deleted.*/
   }
 
   #landing-image {
-    height: 50vh;
+    height: 70vh;
     overflow: hidden;
     position: relative;
     /*change height: 70vh after song is live and countdown is deleted.*/
+  }
+
+  #coverart {
+    height: 380px;
+    width: 380px;
   }
 
   #spotifyy {
