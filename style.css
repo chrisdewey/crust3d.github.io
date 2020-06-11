@@ -186,7 +186,7 @@ main {
 
 .caption {
   padding: 0.8rem;
-  height: 600px;
+  height: 650px;
   background-image: url(/images/new4.jpg);
   background-position: center;
   background-size: cover;
@@ -344,6 +344,7 @@ footer h3 {
     padding: 0.8rem;
     text-align: center;
     background-image: none;
+    padding-top: 8rem;
   }
 
   #para {
