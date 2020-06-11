@@ -91,7 +91,7 @@ main {
 
 #music {
   background-image: url(images/new3.jpg);
-  background-position: center;
+  background-position: 50% 30%;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 1rem;
