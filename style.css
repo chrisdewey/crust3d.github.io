@@ -80,13 +80,67 @@ main {
   justify-content: center;
 }
 
-#coverart {
+.coverart {
   height: 330px;
   width: 330px;
   border: 2px;
   border-style: solid;
   justify-content: center;
   margin: 1rem;
+}
+
+.coverart1 {
+  height: 330px;
+  width: 330px;
+  border: 2px;
+  border-style: solid;
+  justify-content: center;
+  margin: 1rem;
+}
+
+#upcoming {
+  background-image: url(images/new1.jpg);
+  background-position: 50% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.upcominginner {
+  display: flex;
+  flex: 0 1 50vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: none;
+}
+
+.tracktitle {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background: rgba(51, 51, 51, 0.65);
+}
+
+.songplayer {
+  width: 330px;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: auto;
+  padding: none;
 }
 
 #music {
@@ -146,14 +200,14 @@ main {
   background: #f4f4f4;
 }
 
-#header {
+.header {
   padding: 1rem;
   text-align: center;
   background: #333;
   color: #fff;
 }
 
-#header h2 {
+.header h2 {
   border-left: dotted 1px #fff;
   border-right: dotted 1px #fff;
   display: inline-block;
@@ -280,7 +334,7 @@ footer h3 {
     /*change height: 70vh after song is live and countdown is deleted.*/
   }
 
-  #coverart {
+  .coverart {
     height: 380px;
     width: 380px;
   }
@@ -354,10 +408,18 @@ footer h3 {
     padding-top: 0;
   }
 }
-/*screen sizes >= 700px */
 
-/*@media (min-width: 700px) {
-  .btn {
-    padding: 1rem 3rem;
+@media (min-width: 830px) {
+  #upcoming {
+    background: url(images/new2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100%;
   }
-}*/
+
+  .upcominginner {
+    height: 60vh;
+  }
+}
