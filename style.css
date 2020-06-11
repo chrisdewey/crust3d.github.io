@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Permanent + Marker&family=Roboto&display=swap);
 
 body {
   font-family: "Roboto", sans-serif;
@@ -187,7 +187,7 @@ main {
 .caption {
   padding: 0.8rem;
   height: 600px;
-  background-image: url(images/new4.jpg);
+  background-image: url(/images/new4.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -230,7 +230,7 @@ main {
   font-weight: 500;
 }
 
-.para {
+#para {
   padding-top: 8rem;
 }
 
@@ -346,7 +346,7 @@ footer h3 {
     background-image: none;
   }
 
-  .para {
+  #para {
     padding-top: 0;
   }
 }
