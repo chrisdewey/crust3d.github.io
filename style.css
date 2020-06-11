@@ -14,7 +14,7 @@ h1 {
   font-family: "Permanent Marker", cursive;
   font-size: 3.5rem;
   font-weight: 500;
-  padding-top: 4rem;
+  padding-top: 1rem;
   -webkit-text-stroke-width: 2px;
   -webkit-text-fill-color: #fff;
   text-shadow: 5px 5px 2px #000;
@@ -50,54 +50,43 @@ main {
 
 #landing-text {
   display: flex;
-  flex: 0 1 50vw;
-  height: 0 1 50vh;
   justify-content: center;
-  align-items: top;
-  text-align: center;
-  padding-right: 1rem;
-  padding-left: 1rem;
 }
 
 #landing-text h2 {
-  color: #888;
+  color: #fff;
 }
 
 #landing-image {
   display: flex;
-  height: 0 1 50vh;
-  flex: 0 1 50vw;
-  margin: 0;
+  align-items: center;
   justify-content: center;
-  align-items: top;
-  text-align: center;
-  padding-bottom: 2rem;
 }
 
-#spotify {
-  display: inline-block;
-  position: relative;
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow iframe {
+  padding-left: 8rem;
+}
+
+#spotify1 {
+  position: inherit;
   overflow: visible;
   text-align: center;
-  width: 100;
+  justify-content: center;
 }
 
 #coverart {
-  display: flex;
   height: 330px;
   width: 330px;
   border: 2px;
   border-style: solid;
-  overflow: none;
-}
-
-#coverart img {
-}
-
-.follow {
-  position: relative;
-  padding-left: 27.5%;
-  padding-bottom: 1rem;
+  justify-content: center;
+  margin: 1rem;
 }
 
 #music {
@@ -143,7 +132,7 @@ main {
   padding: 0.5rem 2rem;
   font-size: 1.3rem;
   text-shadow: 2px 2px 0 #333;
-  border: 1px #333 solid;
+  border: 2px #000 solid;
   display: inline-block;
   margin: 2rem 0 0;
   border-radius: 10px;
@@ -226,18 +215,19 @@ footer h3 {
 /*screen sizes >= 500px */
 
 @media (min-width: 700px) {
-  #landings {
-    display: flex;
-    height: 100%;
+  h1 {
+    font-size: 5rem;
+    padding-top: 1rem;
+    margin-top: 2rem;
   }
 
   #landing-text {
-    height: 30vh;
+    height: 20vh;
     /*change to 30vh after song is live, and countdown timer is deleted.*/
   }
 
   #landing-image {
-    height: 70vh;
+    height: 50vh;
     overflow: hidden;
     position: relative;
     /*change height: 70vh after song is live and countdown is deleted.*/
