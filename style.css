@@ -54,7 +54,7 @@ main {
   height: 30vh;
 }
 
-#landing-text h2 {
+#landing-text span {
   display: flex;
   margin: 0;
   justify-content: center;
