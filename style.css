@@ -58,7 +58,7 @@ main {
   display: flex;
   margin: 0;
   justify-content: center;
-  align-items: top;
+  align-items: center;
   text-align: center;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -98,8 +98,8 @@ main {
 }
 
 .coverart {
-  height: 330px;
-  width: 330px;
+  height: 280px;
+  width: 280px;
   border: 2px;
   border-style: solid;
   justify-content: center;
