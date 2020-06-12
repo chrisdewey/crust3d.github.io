@@ -56,7 +56,6 @@ main {
 
 #landing-text span {
   display: flex;
-  margin: 0;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -214,6 +213,20 @@ main {
 }
 
 .btn:hover {
+  background: #f4f4f4;
+}
+
+.btn1 {
+  font-size: 1.3rem;
+  border: 2px #000 solid;
+  margin: 2rem 0 0;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 350ms ease;
+}
+
+.btn1:hover {
   background: #f4f4f4;
 }
 
