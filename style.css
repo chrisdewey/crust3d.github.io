@@ -64,8 +64,8 @@ main {
   font-weight: 400;
   font-size: 1.3rem;
   text-transform: capitalize;
-  background: rgba(51, 51, 51, 0.7);
-  background-size: 300px 100px;
+  background: #2ebd59;
+  border-radius: 8px;
 }
 
 #landing-image-outer {
