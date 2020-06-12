@@ -70,6 +70,7 @@ main {
 
 #landing-image-outer {
   height: 70vh;
+  padding-bottom: 5rem;
 }
 
 #landing-image {
@@ -362,6 +363,7 @@ footer h3 {
     height: 70vh;
     overflow: hidden;
     position: relative;
+    padding-bottom: 1rem;
     /*change height: 70vh after song is live and countdown is deleted.*/
   }
 
