@@ -51,10 +51,26 @@ main {
 #landing-text {
   display: flex;
   justify-content: center;
+  height: 30vh;
 }
 
 #landing-text h2 {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: top;
+  text-align: center;
   color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  background: rgba(51, 51, 51, 0.7);
+  background-size: 300px 100px;
+}
+
+#landing-image-outer {
+  height: 70vh;
 }
 
 #landing-image {
@@ -71,6 +87,7 @@ main {
 
 .follow iframe {
   padding-left: 8rem;
+  padding-bottom: 1rem;
 }
 
 #spotify1 {
@@ -323,12 +340,12 @@ footer h3 {
   }
 
   #landing-text {
-    height: 20vh;
+    height: 30vh;
     /*change to 30vh after song is live, and countdown timer is deleted.*/
   }
 
-  #landing-image {
-    height: 50vh;
+  #landing-image-outer {
+    height: 70vh;
     overflow: hidden;
     position: relative;
     /*change height: 70vh after song is live and countdown is deleted.*/
