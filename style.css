@@ -104,6 +104,7 @@ img {
   border-style: solid;
   justify-content: center;
   margin: 1rem;
+  -webkit-backface-visibility: visible;
 }
 
 .coverart1 {
