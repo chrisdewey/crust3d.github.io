@@ -69,8 +69,8 @@ img {
 }
 
 #landing-image-outer {
-  height: 90vh;
-  padding-bottom: 5rem;
+  height: 80vh;
+  padding-top: 6rem;
 }
 
 #landing-image {
@@ -104,7 +104,6 @@ img {
   border-style: solid;
   justify-content: center;
   margin: 1rem;
-  -webkit-backface-visibility: visible;
 }
 
 .coverart1 {
@@ -201,7 +200,7 @@ img {
 }
 
 .btn {
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   font-size: 1.3rem;
   text-shadow: 2px 2px 0 #333;
   border: 2px #000 solid;
@@ -355,15 +354,21 @@ footer h3 {
   }
 
   #landing-text {
+    height: 20vh;
     /*change to 30vh after song is live, and countdown timer is deleted.*/
   }
 
   #landing-image-outer {
+    height: 70vh;
     overflow: hidden;
     position: relative;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
+
     /*change height: 70vh after song is live and countdown is deleted.*/
+  }
+
+  .btn1 {
+    width: 300px;
+    margin-left: 2.75rem;
   }
 
   .coverart {
