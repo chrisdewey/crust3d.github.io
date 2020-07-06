@@ -133,7 +133,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
+  /*padding: 1rem;*/
   padding-bottom: none;
 }
 
@@ -465,6 +465,6 @@ footer h3 {
   }
 
   .upcominginner {
-    height: 60vh;
+    height: 45vh;
   }
 }
