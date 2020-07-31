@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="timer.css" />
+    <link rel="stylesheet" href="pics.css" />
     <title>Airworthy | It's My Life out now!</title>
     <link
       rel="apple-touch-icon"
@@ -40,6 +41,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/timer.js" type="text/javascript"></script>
+    
   </head>
   <body>
     <main>
@@ -62,7 +64,7 @@
               <iframe
                 src="https://open.spotify.com/follow/1/?uri=spotify:artist:4P1OYBpK5H2Ih7hxBNGjdU?si=Y4pumZjdSsGXiKbjKY7-hA&size=detail&theme=light&show-count=0"
                 width="300"
-                height="56"
+                height="80"
                 scrolling="no"
                 frameborder="0"
                 style="border: none; overflow: hidden;"
@@ -150,30 +152,36 @@
         </div>
       </div>
 
-      <!--  ~~~~~ Section for upcoming tracks when one is planned ~~~~~
-      <div class="header"><h2>Upcoming Tracks</h2></div>
+      <!--  ~~~~~ Section for upcoming tracks when one is planned ~~~~~-->
+      <div class="header"><h2>Upcoming EP</h2></div>
 
       <div id="upcoming">
         <div class="box1">
-          <div class="tracktitle">Heartfelt Decision - out June 26th!</div>
+          <div class="tracktitle">28 Years - Rufio & Airworthy - out Aug 6th!</div>
           <div class="upcominginner">
-            <img class="coverart1" src="images/cover2.jpg" loading="lazy" />
+            <img class="coverart1" src="images/28yrs.jpg" loading="lazy" />
           </div>
-          <audio class="songplayer" controls>
-            <source src="songs/HeartfeltDecision.wav" type="audio/wav" />
-            Your browser does not support the audio element.
-          </audio>
+         
           <div id="presavelink">
             <div class="btn">
               <a
-                href="https://distrokid.com/hyperfollow/airworthy/heartfelt-decision-2"
+                href="https://distrokid.com/hyperfollow/rufioandairworthy/28-years"
                 target="_blank"
                 >Pre-Save Now!</a
               >
             </div>
+            
+          </div>
+          <div class="timer">
+            <div class="countdown">
+              <div id="day">na</div>
+              <div id="hour">na</div>
+              <div id="minute">na</div>
+              <div id="second">na</div>
+            </div>
           </div>
         </div>
-        <div class="box1">
+        <!--<div class="box1">
           <div class="tracktitle">
             Lose Lose &#40;feat. Rufio&#41; - out July 10th!
           </div>
@@ -202,30 +210,19 @@
               >
             </div>
           </div>
-        </div>
-      </div>-->
+        </div>-->
+      </div>
 
       <div class="header">
         <h2>More</h2>
       </div>
 
-      <hr style="height: 1px; border-width: 0; color: black;" />
-
-      <div class="iframe-container">
-        <iframe
-          src="https://www.youtube.com/embed/mIwnt1SPrlk?start=1"
-          allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
-          loading="lazy"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <hr style="height: 1px; border-width: 0; color: black;" />
       <div id="bnp">
-        <img
+        <!--<img
           src="images/Img1.JPG"
           loading="lazy"
           alt="Airworthy with a microphone on stage."
-        />
+        />-->
         <div id="bio">
           <div id="biopic"></div>
           <div id="captionouter">
@@ -242,12 +239,56 @@ Airworthy is an emerging hip-hop artist based in Utah. Growing up as an undergro
             </div>
           </div>
         </div>
-        <img
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="images/blue.png"
+            loading="lazy"
+            alt="Airworthy in a colorful alleyway.">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="images/Img1.JPG"
+            loading="lazy"
+            alt="Airworthy with a microphone on stage.">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="images/IMG_2243-min.jpg"
+            loading="lazy"
+            alt="Airworthy with a mic on stage.">
+          </div>
+
+        </div>
+        <br>
+
+        <div id="image_select_dots">
+          <span class="dots"></span>
+          <span class="dots"></span>
+          <span class="dots"></span>
+        </div>
+        <!--<img
           src="images/blue.png"
           loading="lazy"
           alt="Airworthy with a microphone on stage."
-        />
+        />-->
       </div>
+      <script src="/pics.js" type ="text/javascript"></script>
+      <hr style="height: 1px; border-width: 0; color: black;" />
+
+      <div class="iframe-container">
+        <iframe
+          src="https://www.youtube.com/embed/mIwnt1SPrlk?start=1"
+          allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <hr style="height: 1px; border-width: 0; color: black;" />
+
       <div id="base">
         <a href="#top">Airworthy</a> &nbsp; <span>|</span> &nbsp;
         <a
