@@ -29,6 +29,7 @@ h1 {
   /*text-align: center;*/
 }
 
+
 h2 {
   font-weight: 400;
   font-size: 1rem;
@@ -42,10 +43,18 @@ img {
 }
 
 #landing {
-  background-image: url(/images/img_2282.jpg);
+  background-image: url(/images/pawel-janiak-wkttyGiRWNw-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#landing-text-inner {
+  display: block;
+  
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #landing-text {
@@ -70,7 +79,7 @@ img {
 
 #landing-image-outer {
   height: 80vh;
-  padding-top: 2.5rem;
+  padding-top: .5rem;
 }
 
 #landing-image {
@@ -118,7 +127,7 @@ img {
 }
 
 #upcoming {
-  background-image: url(images/new1.jpg);
+  background-image: url(images/yoav-aziz-tKCd-IWc4gI-unsplash.jpg);
   background-position: 50% 30%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -163,7 +172,7 @@ img {
 }
 
 #music {
-  background-image: url(images/new3.jpg);
+  background-image: url(images/paolo-bendandi-hkpWEhN0os8-unsplash.jpg);
   background-position: 50% 30%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -352,6 +361,14 @@ footer h3 {
   display: none;
 }
 
+#baselogo {
+  display: inline-block;
+  width: 90px;
+  height: auto;
+  margin-top: -2rem;
+  margin-bottom: -0.80rem;
+}
+
 /*screen sizes >= 500px */
 
 @media (min-width: 700px) {
@@ -366,11 +383,16 @@ footer h3 {
     /*change to 30vh after song is live, and countdown timer is deleted.*/
   }
 
+  #landing-text-inner {
+    width: 600px;
+    height: auto;
+  }
+
   #landing-image-outer {
     height: 70vh;
     overflow: hidden;
     position: relative;
-
+    padding-top: 2.5rem;
     /*change height: 70vh after song is live and countdown is deleted.*/
   }
 
