@@ -1,4 +1,4 @@
-var countDate = new Date("Aug 6, 2020 00:00:00").getTime();
+var countDate = new Date("Aug 21, 2020 00:00:00").getTime();
 
 function releaseDate() {
   var now = new Date().getTime();
