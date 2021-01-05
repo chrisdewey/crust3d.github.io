@@ -1,335 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src *; 
-                  style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
-                  script-src * 'self' 'unsafe-inline' 'unsafe-eval';"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/landing.css" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="timer.css" />
-    <link rel="stylesheet" href="pics.css" />
-    <title>Airworthy | Idk How to Love You out now!</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta
-      name="description"
-      content="Official website of underground hip-hop music artist Airworthy. Find his newest tracks and music videos here!"
-    />
-    <script
-      src="https://kit.fontawesome.com/89ca4feb23.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/timer.js" type="text/javascript"></script>
-    
-  </head>
-  <body>
-    <main>
-      <a id="top">
-        <div id="landing">
-          <div id="landing-text">
-            <div id="landing-text-inner">
+    <script src="js/smoke.js-master/smoke.js"></script>
 
-              <img src="images/IMG_5692.PNG" alt="logo">
-              <!--<h1>Airworthy</h1>-->
-              <!--<div class="btn1">
-                <a
-                  href="https://open.spotify.com/track/4qrMSER10boQRSnhrISeG5?si=NHmsW3C9RvqwijQ_FGMCYg"
-                  target="_blank"
-                  ><span>Listen on Spotify now</span></a
-                >
-              </div>-->
-            </div>
-          </div>
-          <div id="landing-image-outer">
-            <div class="follow">
-              <iframe
-                src="https://open.spotify.com/follow/1/?uri=spotify:artist:4P1OYBpK5H2Ih7hxBNGjdU?si=Y4pumZjdSsGXiKbjKY7-hA&size=detail&theme=light&show-count=0"
-                width="300"
-                height="80"
-                scrolling="no"
-                frameborder="0"
-                style="border: none; overflow: hidden;"
-                allowtransparency="true"
-                allow="encrypted-media"
-              ></iframe>
-            </div>
-            <div id="landing-image">
-              <iframe
-                src="https://open.spotify.com/embed/track/3VXLN2RMJWFs90q58dcNzu"
-                width="300"
-                height="380"
-                frameborder="0"
-                allowtransparency="true"
-                allow="encrypted-media"
-              ></iframe>
-              <!--<img
-                class="coverart"
-                src="images/cover2.jpg"
-                style="position: relative;"
-              />
-              <iframe
-                class="coverart"
-                style="position: absolute; margin: 0;"
-                src="https://www.youtube-nocookie.com/embed/PIea8L14bXU"
-                frameborder="0"
-                allow="accelerometer; encrypted-media; picture-in-picture"
-                loading="lazy"
-                allowfullscreen
-              ></iframe>-->
-            </div>
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
 
-            <!-- <div class="descr">'Heartfelt Decision' Released in:</div>
-            <div class="timer">
-              <div class="countdown">
-                <div id="day">na</div>
-                <div id="hour">na</div>
-                <div id="minute">na</div>
-                <div id="second">na</div>
-              </div>
-            </div>
-            <div id="presavelink">
-              <div class="btn">
-                <a
-                  href="https://distrokid.com/hyperfollow/airworthy/heartfelt-decision-2"
-                  target="_blank"
-                  >Pre-Save Now!</a
-                >
-              </div>
-            </div>-->
-          </div>
-        </div>
-      </a>
+    <div id='enter'>
+        <a href="/main.html" class='noselect'>
+            ENTER
+        </a>
+    </div>
 
-      
+    <script>
+	var canvas = document.getElementById('canvas')
+	var ctx = canvas.getContext('2d')
+	canvas.width = innerWidth
+	canvas.height = innerHeight
 
-      <!--  ~~~~~ Section for upcoming tracks when one is planned ~~~~~-->
-     <!--<div class="header"><h2>Upcoming Track</h2></div>
+  var party = smokemachine(ctx, [23, 101, 206])
 
-      <div id="upcoming">
-        <div class="box1">
-          <div class="tracktitle">Tight Strings - Out This Friday!</div>
-          <div class="upcominginner">
-            <img class="coverart1" src="images/idkhowtoloveyou.jpg" loading="lazy" />
-          </div>
-         
-          <div id="presavelink">
-            <div class="btn">
-              <a
-                href="https://distrokid.com/hyperfollow/airworthy/i-dont-know-how-to-love-you-feat-bryson-jarrett"
-                target="_blank"
-                >Pre-Save Now!</a
-              >
-            </div>
-            
-          </div>
-          <div class="timer">
-            <div class="countdown">
-              <div id="day">na</div>
-              <div id="hour">na</div>
-              <div id="minute">na</div>
-              <div id="second">na</div>
-            </div>
-          </div>
-        </div>
-        <!--<div class="box1">
-          <div class="tracktitle">
-            Lose Lose &#40;feat. Rufio&#41; - out July 10th!
-          </div>
-          <div class="upcominginner">
-            <img class="coverart1" src="images/cover3.jpg" loading="lazy" />
-          </div>
-          <audio class="songplayer" controls>
-            <source src="songs/LoseLose.wav" type="audio/wav" />
-            Your browser does not support the audio element.
-          </audio>
-          <div class="descr">Lose Lose (Feat. Rufio) Released in:</div>
-            <div class="timer">
-              <div class="countdown">
-                <div id="day">na</div>
-                <div id="hour">na</div>
-                <div id="minute">na</div>
-                <div id="second">na</div>
-              </div>
-            </div>
-          <div id="presavelink">
-            <div class="btn">
-              <a
-                href="https://distrokid.com/hyperfollow/airworthy/lose-lose-feat-rufio"
-                target="_blank"
-                >Pre-Save Now!</a
-              >
-            </div>
-          </div>
-        </div>-->
-      </div>
+  party.start() // start animating
 
-      <div class="header">
-        <h2>Released Songs</h2>
-      </div>
+	party.setPreDrawCallback(function(dt){
+        party.addSmoke(innerWidth-5, innerHeight-50, .075)
+        party.addSmoke(5, innerHeight-50, .075)
+        party.addSmoke(innerWidth/2, innerHeight/2., .155)
+       // party.addSmoke(innerWidth/2, innerHeight, .025)
 
-      <div id="music">
-        <div id="music-area">
-          <div id="spotify1">
-            <iframe
-              src="https://open.spotify.com/embed/artist/4P1OYBpK5H2Ih7hxBNGjdU?si=Y2OR5RT9TIanUU73695PKg"
-              width="300"
-              height="380"
-              frameborder="0"
-              allowtransparency="true"
-              allow="encrypted-media"
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
-        <div id="music-right">
-          <div id="spotify1">
-            <iframe
-              src="https://open.spotify.com/embed/artist/0CKIz2bWuN00pdZGKQEcCc?si=nKnDkBQuTaCXCpE2G9ldvA"
-              width="300"
-              height="380"
-              frameborder="0"
-              allowtransparency="true"
-              allow="encrypted-media"
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
-      </div>
 
-      <div class="header">
-        <h2>More</h2>
-      </div>
+		canvas.width = innerWidth
+		canvas.height = innerHeight
+    })
 
-      <div id="bnp">
-        <!--<img
-          src="images/Img1.JPG"
-          loading="lazy"
-          alt="Airworthy with a microphone on stage."
-        />-->
-        <div id="bio">
-          <div id="biopic"></div>
-          <div id="captionouter">
-            <div class="caption">
-              <h3>About &nbsp; <span>Airworthy</span></h3>
-              <br />
-              <div id="para">
-                <p>
-Airworthy is an emerging hip-hop artist based in Utah. Growing up as an underground hip-hop head, he found inspiration from groups like Atmosphere, Cunninlynguists and Hieroglyphics. His music career officially launched in 2015 with ProVeracity, a group of musically talented childhood friends consisting of Airworthy, IMPAKT, and Acrophile. With over 2 years of experience living in Japan and fluency in the language, many Japanese cultural influences can be found in his and ProVeracity's tracks, including multilingual lyricism. Airworthy is also known for his music videos with collab partner and YouTube influencer, Chase Dahl with over 30k subscribers.
-                </p>
-                <br />
-                <h3><a href="https://www.instagram.com/airworthy_official/" target="_blank">IG: Airworthy_official</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slideshow-container">
+    /*
+    var party1 = smokemachine(ctx, [70, 34, 34])
+	party1.start() // start animating
+	party1.setPreDrawCallback(function(dt){
+       // party1.addSmoke(innerWidth, innerHeight/1.1, .05)
+        //party1.addSmoke(0, innerHeight, .05)
+        party1.addSmoke(innerWidth/2, innerHeight, .05)
 
-          <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img src="images/blue.png"
-            alt="Airworthy in a colorful alleyway.">
-          </div>
+		canvas.width = innerWidth
+		canvas.height = innerHeight
+    })
+    */
 
-          <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img src="images/Img1.JPG"
-            alt="Airworthy with a microphone on stage.">
-          </div>
+	// party.addsmoke(innerWidth/2, innerHeight, 100)
+	// onclick=e => {
+	// 	console.log(e)
+	// 	party.step()
+	// }
 
-          <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img src="images/IMG_2243-min.jpg"
-            alt="Airworthy with a mic on stage.">
-          </div>
-          
-          <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img src="images/img_2282crop.jpg"
-            alt="Airworthy with a mic on stage.">
-          </div>
-         
-          <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img src="images/windowcrop.jpg"
-            alt="Airworthy with a mic on stage.">
-          </div>
+	ontouchmove = function (e) {
+		var x = e.clientX
+		var y = e.clientY
+		var n = .5
+		var t = Math.floor(Math.random() * 200) + 3800
+		party.addsmoke(x, y, n, t)
+	}
 
-        </div>
-        <br>
-
-        <div id="image_select_dots">
-          <span class="dots"></span>
-          <span class="dots"></span>
-          <span class="dots"></span>
-          <span class="dots"></span>
-          <span class="dots"></span>
-        </div>
-        <!--<img
-          src="images/blue.png"
-          loading="lazy"
-          alt="Airworthy with a microphone on stage."
-        />-->
-      </div>
-      <script src="/pics.js" type ="text/javascript"></script>
-      <hr style="height: 1px; border-width: 0; color: black;" />
-
-      <div class="iframe-container">
-        <iframe
-          src="https://www.youtube.com/embed/mIwnt1SPrlk?start=1"
-          allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
-          loading="lazy"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <hr style="height: 1px; border-width: 0; color: black;" />
-
-      <div id="base">
-        <a href="#top"><img id="baselogo" src="images/IMG_5692.PNG"></a> &nbsp; <span>|</span> &nbsp;
-        <a
-          href="https://open.spotify.com/artist/4P1OYBpK5H2Ih7hxBNGjdU"
-          target="_blank"
-          ><i class="fab fa-spotify"></i
-        ></a>
-        &nbsp;
-        <a href="https://www.facebook.com/Proveracity/" target="_blank"
-          ><i class="fab fa-facebook-square"></i
-        ></a>
-        &nbsp;
-        <a href="https://www.instagram.com/airworthy_official/" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        &nbsp;
-        <a href="https://www.snapchat.com/add/proveracity" target="_blank"
-          ><i class="fab fa-snapchat"></i
-        ></a>
-      </div>
-    </main>
-
-    <footer>
-      <h3>
-        &copy; 2020 Airworthy | Website by Chris Dewey
-      </h3>
-    </footer>
-  </body>
+</script>
+</body>
 </html>
