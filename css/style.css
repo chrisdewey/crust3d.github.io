@@ -1,0 +1,510 @@
+@import url(https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap);
+
+main {
+  max-width: 900px;
+  border: 2px solid rgba(0, 0, 0, 0.411);
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(255, 255, 255, 0.2),
+    -30px 0px 40px rgba(255, 255, 255, 0.2);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(14, 14, 14);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3.5rem;
+  font-weight: 500;
+  padding-top: 1rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: #fff;
+  text-shadow: 5px 5px 2px #000;
+  /*text-align: center;*/
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#landing {
+  background-image: url(../images/pawel-janiak-wkttyGiRWNw-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#landing-text-inner {
+  display: block;
+  
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#landing-text {
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+}
+
+#landing-text span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  background: #2ebd59;
+  border-radius: 8px;
+}
+
+#landing-image-outer {
+  height: 80vh;
+  padding-top: .5rem;
+}
+
+#landing-image-outer::before {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+#landing-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.follow iframe {
+  padding-left: 8rem;
+  padding-bottom: 1rem;
+}
+
+#spotify1 {
+  position: inherit;
+  overflow: visible;
+  text-align: center;
+  justify-content: center;
+}
+
+.coverart {
+  height: 280px;
+  width: 280px;
+  border: 2px;
+  border-style: solid;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.coverart1 {
+  height: 330px;
+  width: 330px;
+  border: 2px;
+  border-style: solid;
+  justify-content: center;
+  margin: 1rem;
+}
+
+#upcoming {
+  background-image: url(../images/yoav-aziz-tKCd-IWc4gI-unsplash.jpg);
+  background-position: 50% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.upcominginner {
+  display: flex;
+  flex: 0 1 50vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*padding: 1rem;*/
+  padding-bottom: none;
+}
+
+.tracktitle {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background: rgba(51, 51, 51, 0.65);
+}
+
+.songplayer {
+  width: 330px;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: auto;
+  padding: none;
+}
+
+#music {
+  background-image: url(../images/paolo-bendandi-hkpWEhN0os8-unsplash.jpg);
+  background-position: 50% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+
+#music-area {
+  display: flex;
+  flex: 0 1 50vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#music-right {
+  display: flex;
+  flex: 0 1 50vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#presavelink {
+  display: flex;
+
+  justify-content: center;
+  align-items: top;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 0 #333;
+  border: 2px #000 solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  transition: background 350ms ease;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+}
+
+.btn1 {
+  font-size: 1.3rem;
+  border: 2px #000 solid;
+  margin: 2rem 0 0;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 350ms ease;
+}
+
+.btn1:hover {
+  background: #f4f4f4;
+}
+
+.header {
+  padding: 1rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+.header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#base {
+  padding: 1rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  font-family: "Permanent Marker", cursive;
+  position: sticky;
+  bottom: 0px;
+}
+
+#base h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  text-align: left;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#base span {
+  font-family: "Roboto", sans-serif;
+}
+
+.caption {
+  padding: 0.8rem;
+  height: 650px;
+  background-image: url(../images/new4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 6rem;
+}
+
+.caption h3 {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  background: rgba(51, 51, 51, 0.65);
+  background-size: 300px 100px;
+}
+
+.caption p {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background: rgba(51, 51, 51, 0.65);
+  background-size: 300px 100px;
+}
+
+.caption span {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 500;
+}
+
+#para {
+  padding-top: 8rem;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #333;
+}
+
+footer h3 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+#music-right {
+  display: none;
+}
+
+#baselogo {
+  display: inline-block;
+  width: 90px;
+  height: auto;
+  margin-top: -2rem;
+  margin-bottom: -0.80rem;
+}
+
+/*screen sizes >= 500px */
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 5rem;
+    padding-top: 1rem;
+    margin-top: 2rem;
+  }
+
+  #landing-text {
+    height: 20vh;
+    /*change to 30vh after song is live, and countdown timer is deleted.*/
+  }
+
+  #landing-text-inner {
+    width: 600px;
+    height: auto;
+  }
+
+  #landing-image-outer {
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    padding-top: 2.5rem;
+    /*change height: 70vh after song is live and countdown is deleted.*/
+  }
+
+  .btn1 {
+    width: 300px;
+    margin-left: 2.75rem;
+  }
+
+  .coverart {
+    height: 380px;
+    width: 380px;
+  }
+
+  #spotifyy {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 50%;
+  }
+
+  #music {
+    display: flex;
+    height: 100%;
+  }
+
+  #music-area {
+    height: 60vh;
+  }
+
+  #music-right {
+    height: 60vh;
+  }
+
+  #bio {
+    display: flex;
+    height: 100%;
+    border-style: solid;
+    border-color: #333;
+  }
+
+  #captionouter {
+    display: flex;
+    flex: 0 1 60vw;
+    height: 43rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    border: 2px;
+    border-style: solid;
+    border-color: #333;
+  }
+
+  #biopic {
+    background: url(../images/new4.jpg);
+    height: 43.25rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 0 1 40vw;
+    margin: 0;
+    border: 2px;
+  }
+
+  .caption {
+    padding: 0.8rem;
+    text-align: center;
+    background-image: none;
+    padding-top: 8rem;
+  }
+
+  .caption p {
+    font-size: 1.3rem;
+  }
+
+  #para {
+    padding-top: 0;
+  }
+
+  #bnp {
+    border: 2px solid rgba(0, 0, 0, 0.411);
+  }
+
+  
+}
+
+
+
+@media (min-width: 830px) {
+  #upcoming {
+    background: url(../images/yoav-aziz-tKCd-IWc4gI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100%;
+  }
+
+  #music-right {
+    display: flex;
+  }
+
+  .upcominginner {
+    height: 45vh;
+  }
+
+
+}
