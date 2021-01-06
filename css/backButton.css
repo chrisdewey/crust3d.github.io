@@ -1,0 +1,20 @@
+
+
+.float{
+	position:fixed;
+	width:45px;
+	height:35px;
+	top:17px;
+	left:5px;
+	background-color: rgba(2,0,36,.65);
+	color:#f4f4f4;
+    border-radius:10px;
+    border-width: 5px;
+    border-color: rgba(0,0,0,1);
+	text-align:center;
+	box-shadow: 2px 2px 3px #333;
+}
+
+.my-float{
+	margin-top:11px;
+}

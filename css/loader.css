@@ -9,8 +9,8 @@
     background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 38%, rgba(2,30,54,1) 75%, rgba(59,34,37,1) 100%);            
     background: -moz-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 38%, rgba(2,30,54,1) 75%, rgba(59,34,37,1) 100%);
     background: -webkit-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 38%, rgba(2,30,54,1) 75%, rgba(59,34,37,1) 100%);
-    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#3b2225",GradientType=1);
-    */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#3b2225",GradientType=1);
+    
 
     display: flex;
     justify-content: center;
