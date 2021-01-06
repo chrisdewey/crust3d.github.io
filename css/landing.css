@@ -21,19 +21,19 @@ html, body {
 
     
     filter: blur(0px);
-    animation: fadein linear 2.5s;
+    animation: fadein linear 1s;
 
     -webkit-filter: blur(0px);
-    -webkit-animation: fadein linear 2.5s;
+    -webkit-animation: fadein linear 1s;
 
     -moz-filter: blur(0px);
-    -moz-animation: fadeIn ease 2.5s;
+    -moz-animation: fadeIn ease 1s;
 
     -o-filter: blur(0px);
-    -o-animation: fadeIn ease 2.5s;
+    -o-animation: fadeIn ease 1s;
 
     -ms-filter: blur(0px);
-    -ms-animation: fadeIn ease 2.5s;
+    -ms-animation: fadeIn ease 1s;
 }
 @keyframes fadein {
     0% {    -webkit-filter: blur(10px);}
