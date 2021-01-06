@@ -2,9 +2,13 @@
 
 html, body {
     background: rgb(2,0,36);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 38%, rgba(2,30,54,1) 75%, rgba(59,34,37,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 38%, rgba(2,30,54,1) 75%, rgba(59,34,37,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#3b2225",GradientType=1);
+
     background-image:
             url(../images/smokedup.jpg),
-            linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 38%, rgba(0,3,12,1) 90%, rgba(59,34,37,1) 100%);            
+            linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 38%, rgba(2,30,54,1) 75%, rgba(59,34,37,1) 100%);            
             
     background-position: center;
     background-size: contain;
@@ -23,13 +27,13 @@ html, body {
     -webkit-animation: fadein linear 2.5s;
 
     -moz-filter: blur(0px);
-    -moz-animation: fadeIn ease 20s;
+    -moz-animation: fadeIn ease 2.5s;
 
     -o-filter: blur(0px);
-    -o-animation: fadeIn ease 20s;
+    -o-animation: fadeIn ease 2.5s;
 
     -ms-filter: blur(0px);
-    -ms-animation: fadeIn ease 20s;
+    -ms-animation: fadeIn ease 2.5s;
 }
 @keyframes fadein {
     0% {    -webkit-filter: blur(10px);}
