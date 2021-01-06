@@ -54,7 +54,5 @@ function attach(element,listener,ev,tf){
     }
     
     attach(window,'load',function(){
-        fadeOut(document.getElementById('loader-wrapper'),1,0,50);
-        document.getElementById('loader-wrapper').remove();
-        
+        fadeOut(document.getElementById('loader-wrapper'),1,0,65);        
     },false);
