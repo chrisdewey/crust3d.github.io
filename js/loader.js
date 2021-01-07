@@ -1,6 +1,6 @@
-//$(window).on("load",function(){
+// $(window).on("load",function(){
 //    $(".loader-wrapper").fadeOut("slow");
-//});
+// });
 
 /** 
  * The following functions are used as a replacement for the function commented-out above.
@@ -52,7 +52,17 @@ function attach(element,listener,ev,tf){
         },duration);
     
     }
-    
-    attach(window,'load',function(){
-        fadeOut(document.getElementById('loader-wrapper'),1,0,65);        
-    },false);
+
+    function removeIt() {
+        if(document.getElementById('loader-wrapper').opacity == 0){
+        var element = document.getElementById('loader-wrapper');
+        element.remove();
+        }
+    }
+
+    function loadIt(callback) {
+        fadeOut(document.getElementById('loader-wrapper'),1,0,65);
+        callback();
+    }
+
+    attach(window,'load',loadIt(removeIt),false);
