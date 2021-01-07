@@ -1,6 +1,6 @@
-// $(window).on("load",function(){
-//    $(".loader-wrapper").fadeOut("slow");
-// });
+$(window).on("load",function(){
+   $("#loader-wrapper").fadeOut(650);
+});
 
 /** 
  * The following functions are used as a replacement for the function commented-out above.
@@ -9,60 +9,59 @@
  * We instead are allowed to acheive the same animations using only Javascript.
 */
 
-function attach(element,listener,ev,tf){
+// function attach(element,listener,ev,tf){
 
-    if(element.attachEvent) {
+//     if(element.attachEvent) {
     
-        element.attachEvent("on"+listener,ev);
+//         element.attachEvent("on"+listener,ev);
     
-    }else{
+//     }else{
     
-        element.addEventListener(listener,ev,tf);
+//         element.addEventListener(listener,ev,tf);
     
-    }
+//     }
     
-    }
+//     }
     
-    function fadeOut(element,startLevel,endLevel,duration,callback){
+//     function fadeOut(element,startLevel,endLevel,duration,callback){
     
-    var fOInt;
+//     var fOInt;
     
-        op = startLevel;
+//         op = startLevel;
     
-    fOInt = setInterval(function() {
+//     fOInt = setInterval(function() {
     
-        if(op<=endLevel){
+//         if(op<=endLevel){
     
-        element.style.opacity = endLevel;
-        element.style.filter = "alpha(opacity = " + endLevel + ")";
+//         element.style.opacity = endLevel;
+//         element.style.filter = "alpha(opacity = " + endLevel + ")";
     
-        clearInterval(fOInt);
+//         clearInterval(fOInt);
     
-            if(typeof callback == 'function') callback(true);
+//             if(typeof callback == 'function') callback(true);
     
-        }else{
+//         }else{
     
-        op -= 0.1;
+//         op -= 0.1;
     
-        element.style.opacity = op;
-        element.style.filter = "alpha(opacity = " + op*100 + ")";
+//         element.style.opacity = op;
+//         element.style.filter = "alpha(opacity = " + op*100 + ")";
     
-        }
+//         }
     
-        },duration);
+//         },duration);
     
-    }
+//     }
 
-    function removeIt() {
-        if(document.getElementById('loader-wrapper').opacity == 0){
-        var element = document.getElementById('loader-wrapper');
-        element.remove();
-        }
-    }
+//     function removeIt() {
+//         var element = document.getElementById('loader-wrapper');
+//         element.style.zIndex = -1;
+//     }
 
-    function loadIt(callback) {
-        fadeOut(document.getElementById('loader-wrapper'),1,0,65);
-        callback();
-    }
+//     function loadIt() {
+//         fadeOut(document.getElementById('loader-wrapper'),1,0,65);
+//         var element = document.getElementById('loader-wrapper');
+//         element.style.zIndex = 1;
+//     }
 
-    attach(window,'load',loadIt(removeIt),false);
+//     attach(window,'load',loadIt(),false);
