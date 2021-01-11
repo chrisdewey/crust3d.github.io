@@ -85,7 +85,18 @@
   }
   
   #image_select_dots {
+    position: absolute;
+    top:85%;
+    left: 50%;
+    transform: translate(-50%);
     text-align: center;
     margin: .5rem auto .5rem auto;
   }
-  
+
+  @media (min-width: 700px) {
+
+    #image_select_dots {
+      top:92.5%;
+    }
+
+  }
