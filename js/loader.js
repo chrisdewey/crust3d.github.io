@@ -3,6 +3,16 @@ $(window).on("load",function(){
    $("#backButton").css('display', 'inherit')
 });
 
+function deferIframe() {
+   var iframeElem = document.getElementsByTagName('iframe');
+   for ( var i = 0; i < iframeElem.length; i++ ) {
+     if(iframeElem[i].getAttribute('data-src')) {
+       iframeElem[i].setAttribute('src',iframeElem[i].getAttribute('data-src'));
+     } 
+   } 
+ }
+ window.onload = deferIframe;
+
 /** 
  * The following functions are used as a replacement for the function commented-out above.
  * The purpose of using this larger function instead of the 2-line function written above,
