@@ -152,7 +152,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /*padding: 1rem;*/
+  padding-top: 2rem;
   padding-bottom: none;
 }
 
@@ -233,7 +233,6 @@ img {
   text-align: center;
   padding-right: 1rem;
   padding-left: 1rem;
-  padding-bottom: 2rem;
 }
 
 .videosButton {
@@ -302,6 +301,11 @@ img {
   text-align: center;
   background: #333;
   color: #fff;
+  
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: black;
 }
 
 .header h2 {
@@ -317,22 +321,21 @@ img {
   text-align: center;
   background: #333;
   color: #fff;
-  font-family: "Permanent Marker", cursive;
   position: sticky;
   bottom: 0px;
-}
-
-#base h2 {
-  border-left: dotted 1px #fff;
-  border-right: dotted 1px #fff;
-  text-align: left;
-  display: inline-block;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-color: black;
 }
 
 #base span {
   font-family: "Roboto", sans-serif;
+}
+
+@media(min-width: 335px) {
+  #base {
+    font-family: "Permanent Marker", cursive;
+  }
 }
 
 .caption {
@@ -413,7 +416,7 @@ img {
 
 footer {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   color: #333;
 }
 
@@ -542,7 +545,6 @@ footer h3 {
 
   
 }
-
 
 
 @media (min-width: 830px) {
