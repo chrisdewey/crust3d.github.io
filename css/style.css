@@ -30,7 +30,7 @@ body {
 }
 
 .mainLogo {
-    width: 25%;
+  width: 25%;
 }
 
 .cardboxes {
@@ -48,7 +48,8 @@ body {
 
 .card {
   border-radius: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.85);
   margin: 20px;
   width: 300px;
   min-width: 300px;
@@ -65,43 +66,37 @@ body {
 .night.initial .card__background {
   z-index: 0;
   position: absolute;
-  left: -20px;
-  top: -10px;
-  height: 350px;
-  width: 350px;
-  background: no-repeat center/cover url('../img_new/purpdude.png');
+  top: -10%;
+  height: 120%;
+  width: 120%;
+  background: no-repeat center/cover url('../img_new/purpdudenew2.jpg');
 }
 
 .night.revival .card__background {
   z-index: 0;
   position: absolute;
-  left: -50px;
-  top: -100px;
-  height: 500px;
-  width: 400px;
-  background: no-repeat center/cover url('../img_new/musha.png');
+  top: -10%;
+  height: 120%;
+  width: 120%;
+  background: no-repeat center/cover url('../img_new/mushanew.jpg');
 }
 
 .serena.initial .card__background {
   z-index: 0;
   position: absolute;
-  left: -60%;
-  top: -10px;
-  bottom: -10px;
-  height: 420px;
-  width: 600px;
-  background: no-repeat center/cover url('../img_new/uwshirt.png');
+  top: -10%;
+  height: 120%;
+  width: 120%;
+  background: no-repeat center/cover url('../img_new/uwshirtnew.jpg');
 }
 
 .serena.revival .card__background {
   z-index: 0;
   position: absolute;
-  left: -60%;
-  top: -10px;
-  bottom: -10px;
-  height: 420px;
-  width: 600px;
-  background: no-repeat center/cover url('../img_new/airwshirt.png');
+  top: -10%;
+  height: 120%;
+  width: 120%;
+  background: no-repeat center/cover url('../img_new/airwshirtnew.jpg');
 }
 
 .card__title {
@@ -117,44 +112,85 @@ body {
 }
 
 .night.initial .card__title {
-  background: linear-gradient(to bottom, #D50000, rgba(255, 255, 255, 0.5));
+  background: linear-gradient(to bottom, #D50000, rgb(255, 255, 255));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .night.revival .card__title {
-  background: linear-gradient(to bottom, #1A237E, rgba(255, 255, 255, 0.5));
+  background: linear-gradient(to bottom, #1A237E, rgba(255, 255, 255));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .serena.initial .card__title {
-  background: linear-gradient(to bottom, #3D5AFE, rgba(255, 255, 255, 0.5));
+  background: linear-gradient(to bottom, #3D5AFE, rgba(255, 255, 255));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .serena.revival .card__title {
-  background: linear-gradient(to bottom, #FFF59D, rgba(255, 255, 255, 0.5));
+  background: linear-gradient(to bottom, #FFF59D, rgba(255, 255, 255));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
+.cost {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff69;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.disclaimer {
+  background-color: #f110103f;
+  width: 20%;
+  height: 10%;
+  border: 2px solid #000;
+  border-color: rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+.disclaimer > p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.discord {
+  margin-top: 5px;
+  width: 30px;
+  filter: invert(77%) sepia(50%) saturate(5975%) hue-rotate(200deg) brightness(91%) contrast(87%);
+}
+
 @media (max-width: 850px) {
     .logo {
         position: absolute;
-        top:5%;
+        top:0%;
     }
 
     .mainLogo {
         width: 75%;
     }
+
+    .discord {
+      width: 30px;
+      filter: invert(77%) sepia(50%) saturate(5975%) hue-rotate(200deg) brightness(91%) contrast(87%);
+    }
+    
     
     .cardboxes {
+        justify-content: center;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -168,12 +204,73 @@ body {
         flex-direction: column;
     }
 
-
     .card {
+        margin:5px;
         width: 150px;
         min-width: 150px;
         min-height: 200px;
         height: 200px;
+    }
+
+    .night.initial .card__background {
+      z-index: 0;
+      position: absolute;
+      height: 120%;
+      width: 120%;
+      background: no-repeat center/cover url('../img_new/purpdudenew2.jpg');
+    }
+    
+    .night.revival .card__background {
+      z-index: 0;
+      position: absolute;
+      height: 120%;
+      width: 120%;
+      background: no-repeat center/cover url('../img_new/mushanew.jpg');
+    }
+    
+    .serena.initial .card__background {
+      z-index: 0;
+      position: absolute;
+      height: 120%;
+      width: 120%;
+      background: no-repeat center/cover url('../img_new/uwshirtnew.jpg');
+    }
+    
+    .serena.revival .card__background {
+      z-index: 0;
+      position: absolute;
+      height: 120%;
+      width: 120%;
+      background: no-repeat center/cover url('../img_new/airwshirtnew.jpg');
+    }
+
+    
+    .costimg {
+      width: 90%;
+    }
+
+    /** following is unchanged. delete if don't change. **/
+    .card__title {
+      z-index: 2;
+      position: absolute;
+      bottom: 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      width: 100%;
+      text-align: center;
+      font-family: Inconsolata, sans-serif;
+    }
+
+    .disclaimer {
+      background-color: #f110103f;
+      width: 80%;
+      height: 10%;
+      border: 2px solid #000;
+      border-color: rgb(0, 0, 0);
+      color:rgb(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
     }
 
 }
