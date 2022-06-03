@@ -50,16 +50,16 @@ body {
   border-radius: 20px;
   
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.85);
-  margin: 20px;
-  width: 300px;
-  min-width: 300px;
-  height: 400px;
+  margin: 1rem;
+  width: 18.75rem;
+  min-width: 18.75rem;
+  height: 25rem;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   
-  perspective: 1000px;
+  perspective: 62.5rem;
   transform-style: preserve-3d;
 }
 
@@ -152,8 +152,8 @@ body {
 
 .disclaimer {
   background-color: #f110103f;
-  width: 20%;
-  height: 10%;
+  width: 24rem;
+  height: 5rem;
   border: 2px solid #000;
   border-color: rgb(0, 0, 0);
   color:rgb(255, 255, 255);
@@ -169,108 +169,120 @@ body {
 
 .discord {
   margin-top: 5px;
-  width: 30px;
+  width: 2rem;
   filter: invert(77%) sepia(50%) saturate(5975%) hue-rotate(200deg) brightness(91%) contrast(87%);
 }
 
 @media (max-width: 850px) {
-    .logo {
-        position: absolute;
-        top:0%;
-    }
+  .logo {
+    padding-bottom: .5rem;
+  }
 
-    .mainLogo {
-        width: 75%;
-    }
+  .mainLogo {
+      width: 75%;
+  }
 
-    .discord {
-      width: 30px;
-      filter: invert(77%) sepia(50%) saturate(5975%) hue-rotate(200deg) brightness(91%) contrast(87%);
-    }
-    
-    
-    .cardboxes {
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
+  .discord {
+    width: 2rem;
+    filter: invert(77%) sepia(50%) saturate(5975%) hue-rotate(200deg) brightness(91%) contrast(87%);
+  }
+  
+  
+  .cardboxes {
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+  }
 
-    .cardboxes > div {
-        display: flex;
-        flex-basis: calc(50% - 40px);
+  .cardboxes > div {
+      display: flex;
+      flex-basis: calc(50% - 2.5rem);
 
-        justify-content: center;
-        flex-direction: column;
-    }
+      justify-content: center;
+      flex-direction: column;
+  }
 
-    .card {
-        margin:5px;
-        width: 150px;
-        min-width: 150px;
-        min-height: 200px;
-        height: 200px;
-    }
+  .card {
+      margin:5px;
+      width: 9.375rem;
+      min-width: 9.375rem;
+      min-height: 12.5rem;
+      height: 12.5rem;
+  }
 
-    .night.initial .card__background {
-      z-index: 0;
-      position: absolute;
-      height: 120%;
-      width: 120%;
-      background: no-repeat center/cover url('../img_new/purpdudenew2.jpg');
-    }
-    
-    .night.revival .card__background {
-      z-index: 0;
-      position: absolute;
-      height: 120%;
-      width: 120%;
-      background: no-repeat center/cover url('../img_new/mushanew.jpg');
-    }
-    
-    .serena.initial .card__background {
-      z-index: 0;
-      position: absolute;
-      height: 120%;
-      width: 120%;
-      background: no-repeat center/cover url('../img_new/uwshirtnew.jpg');
-    }
-    
-    .serena.revival .card__background {
-      z-index: 0;
-      position: absolute;
-      height: 120%;
-      width: 120%;
-      background: no-repeat center/cover url('../img_new/airwshirtnew.jpg');
-    }
+  .night.initial .card__background {
+    z-index: 0;
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    background: no-repeat center/cover url('../img_new/purpdudenew2.jpg');
+  }
+  
+  .night.revival .card__background {
+    z-index: 0;
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    background: no-repeat center/cover url('../img_new/mushanew.jpg');
+  }
+  
+  .serena.initial .card__background {
+    z-index: 0;
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    background: no-repeat center/cover url('../img_new/uwshirtnew.jpg');
+  }
+  
+  .serena.revival .card__background {
+    z-index: 0;
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    background: no-repeat center/cover url('../img_new/airwshirtnew.jpg');
+  }
 
-    
-    .costimg {
-      width: 90%;
-    }
+  
+  .costimg {
+    width: 90%;
+  }
 
-    /** following is unchanged. delete if don't change. **/
-    .card__title {
-      z-index: 2;
-      position: absolute;
-      bottom: 10px;
-      font-size: 20px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      width: 100%;
-      text-align: center;
-      font-family: Inconsolata, sans-serif;
-    }
+  /** following is unchanged. delete if don't change. **/
+  .card__title {
+    z-index: 2;
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+    font-family: Inconsolata, sans-serif;
+  }
 
-    .disclaimer {
-      background-color: #f110103f;
-      width: 80%;
-      height: 10%;
-      border: 2px solid #000;
-      border-color: rgb(0, 0, 0);
-      color:rgb(255, 255, 255);
-      font-family: Arial, Helvetica, sans-serif;
-      text-decoration: none;
-    }
+  .disclaimer {
+    background-color: #f110103f;
+    width: 80%;
+    height: 10%;
+    border: 2px solid #000;
+    border-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
 
+}
+
+@media (max-width: 450px) {
+  .disclaimer {
+    background-color: #f110103f;
+    width: 80%;
+    height: 15%;
+    border: 2px solid #000;
+    border-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
 }
