@@ -1,84 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-    http-equiv="Content-Security-Policy"
-    content="default-src *; 
-                style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
-                script-src * 'self' 'unsafe-inline' 'unsafe-eval';"
-    >
-    <meta name="facebook-domain-verification" content="zx9cq4wagea3kqxoiilnisf9iopf1f" />
-    <meta
-    name="description"
-    content="Official website of Airworthy, the underground hip-hop music artist. Find his newest tracks, music videos, and updates here!"
-    >
-    <meta name="keywords" content="Airworthy, hip-hop, rap, music, Provo, Jake, Spotify, music videos, hiphop, artist, music, underground">
-    <meta name="author" content="Chris Dewey">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Airworthy | NFT Merch!</title>
 
-    <link rel="stylesheet" href="css/landing.css" />
-
-    <script src="js/smoke.js-master/smoke.js"></script>
-
-    <title>Airworthy | 'Something Is Different' out now!</title>
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="img_new/favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="img_new/favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="img_new/favicon/favicon-16x16.png"
+  />
 </head>
 <body>
-    <canvas id="canvas"></canvas>
 
-    <div id='enter'>
-        <a href="/main" class='noselect'>
-            ENTER
-        </a>
-    </div>
+  <div class="logo">
+    <img class="mainLogo" src="images/IMG_5692.webp" alt="logo">
+  </div>
 
-    <script>
-	var canvas = document.getElementById('canvas')
-	var ctx = canvas.getContext('2d')
-	canvas.width = innerWidth
-	canvas.height = innerHeight
+  <div class="cardboxes">
+    <a href="http://eelslap.com/">
+      <div class="card night initial">
+        <div class="card__background"></div>
+        <div class="card__title">Purple man guy</div>
+      </div>
+    </a>
+    <a href="http://eelslap.com/">
+      <div class="card night revival">
+        <div class="card__background"></div>
+        <div class="card__title">Musha Fire </div>
+      </div>
+    </a>
+    <a href="http://eelslap.com/">
+      <div class="card serena initial">
+        <div class="card__background"></div>
+        <div class="card__title">Ukiyoe Warriors</div>
+      </div>
+    </a>
+    <a href="http://eelslap.com/">
+      <div class="card serena revival">
+        <div class="card__background"></div>
+        <div class="card__title">Airworthy</div>
+      </div>
+    </a>
+  </div>
 
-  var party = smokemachine(ctx, [23, 101, 206])
+  <div class="cost">
+    <img class="costimg" src="img_new/cost.gif" alt="Shirts are 1150 $VET each!">
+  </div>
 
-  party.start() // start animating
+  <a href="https://discord.gg/ZFAhR4bu"  class="disclaimer">
+    <img class="discord" src="img_new/svg/discord-brands.svg">
+    <p>
+      Click here for our discord if you have any questions about the shirts or NFTs.
+    </p>
+  </a>
 
-	party.setPreDrawCallback(function(dt){
-        party.addSmoke(innerWidth-5, innerHeight-50, .1)
-        party.addSmoke(5, innerHeight-50, .1)
-        party.addSmoke(innerWidth/2, innerHeight/2., .155)
 
-		canvas.width = innerWidth
-		canvas.height = innerHeight
-    })
+<script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script><script src="js/func.js"></script>
 
-    party.step(5000);
 
-	ontouchmove = function (e) {
-		var x = e.changedTouches[0].clientX
-		var y = e.changedTouches[0].clientY
-		var n = .5
-		var t = Math.floor(Math.random() * 200) + 3800
-		party.addsmoke(x, y, n, t)
-	}
-
-</script>
 </body>
 </html>
