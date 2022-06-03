@@ -11,14 +11,13 @@ html, body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
   align-items: center;
-  background: no-repeat center/cover url("../images/pawel-janiak-wkttyGiRWNw-unsplash.jpg");
+  background: center url("../images/pawel-janiak-wkttyGiRWNw-unsplash.jpg");
   perspective: 2000px;
   transform-style: preserve-3d;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .logo {
@@ -99,6 +98,24 @@ body {
   background: no-repeat center/cover url('../img_new/airwshirtnew.jpg');
 }
 
+.johnson.initial .card__background {
+  z-index: 0;
+  position: absolute;
+  top: -10%;
+  height: 120%;
+  width: 120%;
+  background: no-repeat center/cover url('../img_new/birdone.jpg');
+}
+
+.johnson.revival .card__background {
+  z-index: 0;
+  position: absolute;
+  top: -10%;
+  height: 120%;
+  width: 120%;
+  background: no-repeat center/cover url('../img_new/airhoodie.jpg');
+}
+
 .card__title {
   z-index: 2;
   position: absolute;
@@ -139,6 +156,20 @@ body {
   color: transparent;
 }
 
+.johnson.initial .card__title {
+  background: linear-gradient(to bottom, #1eff00, rgba(255, 255, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.johnson.revival .card__title {
+  background: linear-gradient(to bottom, #FFF59D, rgba(255, 255, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .cost {
   position: relative;
   display: flex;
@@ -147,10 +178,21 @@ body {
   background-color: #ffffff69;
   width: 100%;
   margin-top: 1rem;
+  border-bottom: 2px solid #000;
+}
+
+.costhoodie {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff69;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
 .disclaimer {
+  display: block;
   background-color: #f110103f;
   width: 24rem;
   height: 5rem;
@@ -262,9 +304,11 @@ body {
   }
 
   .disclaimer {
+    display: block;
+    margin: auto;
     background-color: #f110103f;
-    width: 80%;
-    height: 10%;
+    width: 24rem;
+    height: 5rem;
     border: 2px solid #000;
     border-color: rgb(0, 0, 0);
     color:rgb(255, 255, 255);
@@ -276,9 +320,11 @@ body {
 
 @media (max-width: 450px) {
   .disclaimer {
+    display: block;
+    margin: auto;
     background-color: #f110103f;
-    width: 80%;
-    height: 15%;
+    width: 24rem;
+    height: 5rem;
     border: 2px solid #000;
     border-color: rgb(0, 0, 0);
     color:rgb(255, 255, 255);
