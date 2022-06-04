@@ -216,6 +216,32 @@ body {
   filter: invert(77%) sepia(50%) saturate(5975%) hue-rotate(200deg) brightness(91%) contrast(87%);
 }
 
+.buynow {
+  background-color: #a29dee3f;
+  border: 2px solid #000;
+  border-color: rgb(0, 0, 0);
+  border-radius: 2rem;
+  width: 25rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color:#000000;
+  text-shadow: 2px 2px 3px #e4dada;
+  margin: auto;
+  font-weight: normal;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.buynowimg {
+  width: 20rem;
+}
+
 @media (max-width: 850px) {
   .logo {
     padding-bottom: .5rem;
